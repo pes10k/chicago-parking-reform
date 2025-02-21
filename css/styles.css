@@ -1,7 +1,108 @@
+:root {
+  --color-chicago-blue: #41B6E6;
+  --color-chicago-red: #E4002B;
+  --color-chicago-dark: #1C1C1C;
+  --color-background: #F8F8F8;
+  --color-gray-dark: #4D4D4D;
+}
+
 body {
-  background-color: rgb(211, 236, 245);
+  background-color: var(--color-background);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: var(--color-chicago-dark);
+  margin: 0;
+}
+
+header {
+  background-color: var(--color-chicago-blue);
+  color: white;
+  padding: 2rem 0;
+}
+
+h1, h2, h3 {
+  font-family: "Big Shoulders Text", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-chicago-blue);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--color-gray-dark);
+  border-bottom: 4px solid var(--color-chicago-red);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: var(--color-chicago-dark);
 }
 
 .container {
   background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--color-chicago-blue);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+}
+
+.list-group-item {
+  border-left: 4px solid var(--color-chicago-blue);
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.list-group-item:hover {
+  transform: translateX(5px);
+}
+
+.list-group-item a {
+  color: var(--color-chicago-dark);
+  text-decoration: none;
+}
+
+dl dt {
+  font-family: "Big Shoulders Text", sans-serif;
+  font-size: 1.3rem;
+  color: var(--color-gray-dark);
+  margin-top: 1.5rem;
+}
+
+dl dd {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.row {
+  border-radius: 12px;
+  overflow: hidden;
 }
