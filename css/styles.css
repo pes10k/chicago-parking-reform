@@ -1,7 +1,186 @@
+/* GOV.UK inspired styles with modern enhancements */
+:root {
+  --gov-blue: #1d70b8;
+  --gov-dark: #0b0c0c;
+  --gov-green: #00703c;
+  --gov-grey: #b1b4b6;
+  --gov-light: #f3f2f1;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
 body {
-  background-color: rgb(211, 236, 245);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--gov-dark);
+  background-color: var(--gov-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(45deg, var(--gov-dark), #1a1a1a);
+  padding: 3rem 0;
+  color: white;
+  border-bottom: 10px solid var(--gov-blue);
+  box-shadow: 0 4px 12px var(--shadow);
 }
 
 .container {
   background-color: white;
+  padding: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--gov-dark);
+  margin: 1rem 0;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--gov-green);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--gov-blue);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gov-grey);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1875rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.btn-primary {
+  background-color: var(--gov-green);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1875rem;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #002d18;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #005a30;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.card {
+  border: 1px solid var(--gov-grey);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--gov-blue);
+}
+
+.list-group {
+  list-style: none;
+  padding: 0;
+}
+
+.list-group-item {
+  border: 1px solid var(--gov-grey);
+  border-left: 4px solid var(--gov-blue);
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.list-group-item:hover {
+  border-left-width: 8px;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.list-group-item a {
+  color: var(--gov-blue);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+}
+
+.list-group-item a:hover {
+  color: #003078;
+  text-decoration: underline;
+}
+
+dl dt {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: var(--gov-blue);
+  padding-bottom: 0.5rem;
+}
+
+dl dd {
+  margin-left: 0;
+  margin-bottom: 2rem;
+  font-size: 1.1875rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--gov-grey);
+}
+
+.header-logo {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  background: white;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 1.5rem;
+  }
+  
+  .header-logo {
+    width: 100px;
+    height: 100px;
+  }
 }
