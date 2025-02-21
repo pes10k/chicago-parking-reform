@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Big Shoulders Text";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/BigShouldersText-VariableFont_wght.ttf) format('woff2');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/fonts/OpenSans-VariableFont_wdth\,wght.ttf) format('woff2');
+}
+
 :root {
   --color-chicago-blue: #41B6E6;
   --color-chicago-red: #E4002B;
